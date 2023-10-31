@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Change to "esnext" for modern JavaScript support
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true, // Prevents TypeScript from generating JS files
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node", // Use "node" instead of "bundler" for better compatibility
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ] // Assuming your source files are in a "src" directory
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
