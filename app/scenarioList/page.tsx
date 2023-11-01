@@ -90,7 +90,7 @@ const ScenarioListPage = () => {
              </p>
 
              <p className="text-sm font-bold mt-2 text-black">
-             Wrong Answer: {scenario.correct_answer}
+             Wrong Answer: {scenario.incorrect_answer}
              </p>
 
 
